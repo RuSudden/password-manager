@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Password manager</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__container">
+      <div class="header__container__left">
+        <img src="images/terrain.svg">
+        <div class="header__title">Password manager</div>
+      </div>
+      <div class="header__container__right">
+        <button onclick="minimize()" class="header__minimize">
+          <i class="fa-solid fa-window-minimize"></i>
+        </button>
+        <button onclick="windowClose()" class="header__close">
+          <i class="fa-solid fa-xmark fa-lg"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+
+  <main class="main__box">
+    <div class="main__search__container">
+      <div class="search_form">
+          <input class="form-control" id="search-text" type="text" placeholder="Search for a password" onkeyup="tableSearch()">
+        </div>
+        <button class="btn add_password">ADD PASSWORD</button>
+        <button class="btn show_password show_password_red">SHOW PASSWORD</button>
+      </div>
+      <div class="main__table__container">
+        <div class="password__modal">
+          <div class="password__modal__container">
+            <div class="input__container">
+              <input class="input__modal add__account" type="text" placeholder="Enter your account name">
+              <input class="input__modal add__site" type="text" placeholder="Enter website address">
+              <input class="input__modal add__login" type="text" placeholder="Enter your login">
+              <input class="input__modal add__email" type="text" placeholder="Enter your email">
+              <input class="input__modal add__password" type="password" placeholder="Enter your password">
+              <input class="input__modal add__discription" type="text" placeholder="Enter your discription">
+            </div>
+            <div class="error__modal">Please fill in all fields</div>
+            <div class="success__modal">Account added successfully</div>
+            <div class="nav__modal">
+              <button class="btn add_new_account">ADD PASSWORD</button>
+              <button class="btn close_new_account">CLOSE</button>
+            </div>
+          </div>
+          <!-- <div class="successfullyAdded">
+            <div class="successfullAdded__text">Account added successfully</div>
+          </div> -->
+        </div>
+        
+        <table class="table table-striped" id="ol">
+          <thead>
+          <tr class="table__title">
+            <th>Website</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th class="disc">Discription</th>
+          </tr>
+        </thead>
+        </table>
+    </div>
+  </main>
+  <script src="JavaScript/main.js"></script>
+  <!--<script type="module" src="JavaScript/kek.js"></script>-->
+</body>
+</html>

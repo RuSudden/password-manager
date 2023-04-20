@@ -1,0 +1,190 @@
+// main: ../style.less
+
+.main__table__container {
+  min-width: 1270px;
+  background: #202226;
+  height: 85vh;
+  margin: 10px 15px 15px 15px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: 10px;
+    background-color: #202226;
+  }
+  &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background-color: #8a8a8a;
+  }
+  &::-webkit-scrollbar-track {
+      border-radius: 10px;
+      background-color: #202226
+  }
+}
+
+// ==================== Таблица
+.table {
+  width: 100%;
+  border-collapse:collapse;
+  &.active {
+    content: "Текст скопирован";
+    position: fixed;
+    top: 100px;
+    left: 300px;
+    width: 150px;
+    height: 50px;
+    background: red;
+  }
+}
+td, th{
+  border-left: 2px solid #24252b;
+	border-right: 2px solid #24252b;
+}
+
+td:first-child, th:first-child {
+  border: none;
+}
+td:last-child, th:last-child {
+  border: none;
+}
+// ================== Заголовки таблицы
+.table__title th{
+  background: #26282C;
+  margin: 0;
+  padding: 0;
+  max-height: 41px;
+  height: 41px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #6B707C;
+  font-weight: bold;
+}
+.hide {
+  display: none;
+}
+// ==================== Колонка "Website"
+.website {
+  padding: 12px;
+  display: flex;
+  max-width: 210px;
+  justify-content: flex-start;
+  align-items: center;
+  & .website__container {
+    margin-left: 10px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    & .url {
+      color: #6B707C;
+      text-decoration: underline;
+      margin-top: 5px;
+      cursor: pointer;
+    }
+  }
+}
+
+// ==================== Колонка "Username"
+.username {
+  display: flex;
+  justify-content: center;
+  width: auto;
+}
+
+// ====================== Ячейка
+.default__row {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+  background: transparent;
+  font-weight: 300;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  cursor: pointer;
+  max-width: 240px;
+  word-wrap: break-word;
+}
+.password {
+  width: auto;
+}
+.pass_container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  & input {
+    width: 80%;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: white;
+    background: transparent;
+    font-weight: 300;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+}
+.password-copy {
+	width: 20px;
+	height: 20px;
+  background: url(../images/frame.svg) 0 0 no-repeat;
+}
+.password-control {
+	width: 20px;
+	height: 20px;
+  background: url(../images/frame.svg) 0 0 no-repeat;
+}
+.password-control.view {
+	background: url(../images/frame.svg) 0 0 no-repeat;
+}
+.pass_box {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  & a:first-child {
+    margin-right: 5px;
+  }
+}
+.discription {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  align-items: center;
+  color: white;
+  font-weight: 300;
+  max-width: 200px;
+  word-wrap:break-word;
+}
+.missing {
+  color: #ff6b6b;
+}
+.email {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+}
+.login {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
+.login {
+  min-width: 150px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
+.url{
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
+.password-input {
+  max-width: 200px;
+}

@@ -1,0 +1,409 @@
+.header {
+  height: 30px;
+  width: 100%;
+  position: fixed;
+  background: #26282C;
+  -webkit-app-region: drag;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+.header__container__left {
+  height: 30px;
+  width: 160px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+.header__title {
+  color: #FFF;
+  margin-left: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+.header__container__right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.header__container__right i {
+  color: white;
+}
+.header__container__right i.fa-solid:hover {
+  color: red;
+  transition: 0.2s linear;
+}
+.header__close {
+  background-color: transparent;
+  width: 15px;
+}
+.header__minimize {
+  margin-right: 10px;
+  background-color: transparent;
+  width: 15px;
+  margin-bottom: 10px;
+}
+.main__box {
+  background: #181A1E;
+  height: 100vh;
+  width: 100%;
+}
+.main__search__container {
+  padding: 42px 0 12px 15px;
+}
+.search_form {
+  display: inline-flex;
+  justify-content: space-between;
+  height: 41px;
+  width: 526px;
+  background: #26282C;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  padding: 11px 20px 11px 35px;
+}
+.search_form input {
+  width: 430px;
+  outline: none;
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #6B707C;
+}
+.add_password {
+  background: #5e5efa;
+  width: 165px;
+  height: 41px;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  color: white;
+  border-radius: 10px;
+  margin-left: 15px;
+}
+.add_password:hover {
+  background: #3C3BFF;
+  transition: 0.3s linear;
+}
+.show_password_red {
+  background: #b44646;
+  width: 165px;
+  height: 41px;
+  margin-left: 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+}
+.show_password_red:hover {
+  background: #ff1818;
+  transition: 0.3s linear;
+}
+.show_password_green {
+  background: #6df344;
+  width: 165px;
+  height: 41px;
+  margin-left: 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+}
+.show_password_green:hover {
+  background: #2bff00;
+  transition: 0.3s linear;
+}
+.main__table__container {
+  min-width: 1270px;
+  background: #202226;
+  height: 85vh;
+  margin: 10px 15px 15px 15px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  overflow-y: scroll;
+}
+.main__table__container::-webkit-scrollbar {
+  width: 10px;
+  background-color: #202226;
+}
+.main__table__container::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #8a8a8a;
+}
+.main__table__container::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #202226;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table.active {
+  content: "Текст скопирован";
+  position: fixed;
+  top: 100px;
+  left: 300px;
+  width: 150px;
+  height: 50px;
+  background: red;
+}
+td,
+th {
+  border-left: 2px solid #24252b;
+  border-right: 2px solid #24252b;
+}
+td:first-child,
+th:first-child {
+  border: none;
+}
+td:last-child,
+th:last-child {
+  border: none;
+}
+.table__title th {
+  background: #26282C;
+  margin: 0;
+  padding: 0;
+  max-height: 41px;
+  height: 41px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #6B707C;
+  font-weight: bold;
+}
+.hide {
+  display: none;
+}
+.website {
+  padding: 12px;
+  display: flex;
+  max-width: 210px;
+  justify-content: flex-start;
+  align-items: center;
+}
+.website .website__container {
+  margin-left: 10px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+.website .website__container .url {
+  color: #6B707C;
+  text-decoration: underline;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.username {
+  display: flex;
+  justify-content: center;
+  width: auto;
+}
+.default__row {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: white;
+  background: transparent;
+  font-weight: 300;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  cursor: pointer;
+  max-width: 240px;
+  word-wrap: break-word;
+}
+.password {
+  width: auto;
+}
+.pass_container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pass_container input {
+  width: 80%;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: white;
+  background: transparent;
+  font-weight: 300;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.password-copy {
+  width: 20px;
+  height: 20px;
+  background: url(../images/frame.svg) 0 0 no-repeat;
+}
+.password-control {
+  width: 20px;
+  height: 20px;
+  background: url(../images/frame.svg) 0 0 no-repeat;
+}
+.password-control.view {
+  background: url(../images/frame.svg) 0 0 no-repeat;
+}
+.pass_box {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.pass_box a:first-child {
+  margin-right: 5px;
+}
+.discription {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  align-items: center;
+  color: white;
+  font-weight: 300;
+  max-width: 200px;
+  word-wrap: break-word;
+}
+.missing {
+  color: #ff6b6b;
+}
+.email {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+}
+.login {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
+.login {
+  min-width: 150px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
+.url {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
+.password-input {
+  max-width: 200px;
+}
+.password__modal {
+  background-color: rgba(0, 0, 0, 0.692);
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.opacity {
+  opacity: 1;
+}
+.password__modal__container {
+  position: absolute;
+  background: #202226;
+  height: auto;
+  width: auto;
+  border-radius: 20px;
+  top: 15%;
+  left: 33%;
+}
+.input__container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px 0;
+  justify-content: center;
+}
+.input__modal {
+  width: 430px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.678);
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  padding: 10px 20px;
+  color: #6B707C;
+  margin-bottom: 20px;
+}
+.add_new_account {
+  background: #5e5efa;
+  width: 165px;
+  height: 41px;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  color: white;
+  border-radius: 10px;
+}
+.add_new_account:hover {
+  background: #3C3BFF;
+  transition: 0.3s linear;
+}
+.close_new_account {
+  background: #5e5efa;
+  width: 165px;
+  height: 41px;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  color: white;
+  border-radius: 10px;
+}
+.close_new_account:hover {
+  background: #3C3BFF;
+  transition: 0.3s linear;
+}
+.error__modal {
+  display: none;
+  color: red;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.success__modal {
+  display: none;
+  color: #49ad35;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.nav__modal {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  min-width: 1300px;
+  height: auto;
+}
+button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  -webkit-app-region: no-drag;
+}

@@ -1,0 +1,48 @@
+// main: ../style.less
+.header {
+  height: 30px;
+  width: 100%;
+  position: fixed;
+  background: #26282C;
+  -webkit-app-region: drag;
+}
+.header__container {
+  display: flex;
+  justify-content:space-between;
+}
+&.header__container__left{
+  height: 30px;
+  width: 160px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+.header__title {
+  color: #FFF;
+  margin-left: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+.header__container__right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.header__container__right i{
+  color: white;
+  &.fa-solid:hover {
+    color: red;
+    transition: .2s linear;
+  }
+}
+.header__close {
+  background-color: transparent;
+  width: 15px;
+}
+.header__minimize {
+  margin-right: 10px;
+  background-color: transparent;
+  width: 15px;
+  margin-bottom: 10px;
+}
