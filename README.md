@@ -17,12 +17,12 @@ v 1.0
 
 ### Technologies used
 
+---
+
 * Electron
 * Node.js
-
 * JS
 * HTML
-
 * CSS
 
 ---
